@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+/*custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/*section header .navbar{
+  position: fixed;
+
+}*/
+
+nav{
+ 
+  display: flex;
+  height: 80px;
+  width: 100%;
+  /*background: #1b1b1b;*/
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
+z-index: 999;
+}
+
+nav:hover{
+  background: #1b1b1b;
+  overflow-y: hidden;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+nav .logo img{
+  height: 60px;
+  width: 60px;
+}
+
+
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+
+/* navbar sticky */
+
+nav.sticky{
+    background: crimson;
+}
+
+nav .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+nav .sticky .logo a span{
+    color: #fff;
+}
+
+nav .sticky .menu li a:hover{
+    color: #fff;
+}
+
+
+
+
+
+
+
+.main{
+  overflow: auto;
+  overflow-y: scroll;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  
+}
+
+section{
+  width: 100%;
+  height: 100vh;
+  border-bottom: solid 1px #000;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+
+
+}
+
+section:nth-child(1){
+  background: url("images/HomeFindLambo.png") no-repeat center;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*  background: url("images/HomeAventador.png") no-repeat center;
+}
+
+section:nth-child(3){
+  background-image: url(https://media.autoexpress.co.uk/image/private/s--X-WVjvBW--/f_auto,t_content-image-full-desktop@1/v1665073410/evo/2022/10/Lamborghini%20Aventador%20Ultimae%20review-5.jpg);
+}
+section:nth-child(4){
+  background-image: url();
+}
+
+section:nth-child(5){
+  background-image: url();
+}
+
+section:nth-child(6){
+  background-image: url();
+}
+
+section .content{
+  height: 100vh;
+}*/
+
+.urus{
+  background: url("images/HomeUrus.png") no-repeat center;
+  min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.aventador{
+  background: url("videos/aventador.gif") no-repeat center;
+  min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+
+.aventador .text-1{
+
+  font-size: 20px;
+}
+
+.huracan{
+  background: url("images/HomeHuracan.png") no-repeat center;
+  min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.LS{
+  background: url("images/HomeLS.png") no-repeat center;
+  min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.Motorsport{
+  background: url("images/HomeMS.png") no-repeat center;
+  min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+
+.content h1{
+  font-size: 90px;
+  font-weight: 800px;
+  line-height: 1;
+  letter-spacing: -3px; 
+  
+}
+
+.content p{
+  line-height: 1.5;
+  font-size: 20px;
+  max-width: 700px;
+  
+}
+
+
+/* all similar content styling codes 
+section{
+    padding: 100px 0;
+    height: 100vh;
+    width: 100%;
+}*/
+.max-width{
+    
+    padding: 0 80px;
+    margin: auto;
+}
+
+
+/* home section styling */
+.home{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 500ms;
+}
+
+
+/*.huracan, .LS, .Motorsport{
+  color: black;
+}*/
+
+.home .max-width{
+  width: 100%;
+  display: flex;
+}
+.home .max-width .row{
+  margin-right: 0;
+}
+.home .home-content .text-1{
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.aventador .home-content .text-1{
+  font-size: 20px;
+  width: 45%;
+}
+
+.aventador .home-content .text-1:nth-child(1){
+  font-size: 40px;
+  width: 45%;
+}
+
+.models .text-1{
+    font-size: 60px;
+    font-weight: 600;
+    margin-left: -3px;
+    text-align: center;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 500ms;
+    color: white;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+
+
+
+
+/*section .huracan{
+background-image: -webkit-linear-gradient(175deg, #111 45%, white 15%);
+  min-height: 100px;
+width: 100%;
+}*/
+
+
+
+
+.home .home-content{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+/* Menu for small screen */
+
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav{
+     position: fixed;
+  }
+  nav .menu-btn i{
+    display: block;
+  }
+
+
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  
+
+  #click:checked ~ nav{
+    background-color: #1b1b1b;
+  }
+
+  #click:checked{
+    overflow: hidden;
+  }
+
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+    
+  }
+  #click:checked ~ ul{
+    left: 0;
+
+  }
+
+
+ 
+
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: #FFE55C;
+  }
+
+   #click:checked ~ nav{
+    position: fixed;
+    background-color: #1b1b1b;
+  }
+
+
+  
+}
+
+
+/*section .huracan{
+background-image: -webkit-linear-gradient(175deg, #111 45%, white 15%);
+  min-height: 100px;
+width: 100%;
+}*/
+
+
+
+
+/*MODELS CAROUSEL*/
+
+
+
+#slider {
+  position: relative;
+  width: 50%;
+  height: 30vw;
+  margin: 80px auto;
+  font-family: 'Ubuntu', sans-serif;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+}
+
+input[type=radio] {
+  position: relative;
+  top: 108%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  margin: 0 15px 0 0;
+  opacity: 0.4;
+  transform: translateX(-83px);
+  cursor: pointer;
+}
+
+
+input[type=radio]:nth-child(5) {
+  margin-right: 0px;
+}
+
+input[type=radio]:checked {
+  opacity: 1;
+}
+
+
+
+
+#slider label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  color: black;
+  font-size: 70px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  /*align-items: center;*/
+  justify-content: center;
+  transition: transform 400ms ease;
+}
+
+#slide1 {
+  background: url("images/AventadorModel1.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  background-color: rgba(239, 239, 240);
+}
+
+#slide2 {
+  background: url("images/AventadorModel1.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  background-color: rgba(239, 239, 240);
+}
+
+#slide3 {
+  background: url("images/AventadorModel1.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  background-color: rgba(239, 239, 240);
+}
+
+#slide4 {
+  background: url("images/AventadorModel1.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  background-color: rgba(239, 239, 240);
+}
+
+#slide5 {
+  background: url("images/AventadorModel1.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  background-color: rgba(239, 239, 240);
+}
+
+
+/* Slider Functionality */
+
+/* Active Slide */
+#s1:checked ~ #slide1, #s2:checked ~ #slide2, #s3:checked ~ #slide3, #s4:checked ~ #slide4, #s5:checked ~ #slide5 {
+  box-shadow: 0 13px 26px rgba(0,0,0, 0.3), 0 12px 6px rgba(0,0,0, 0.2);
+  transform: translate3d(0%, 0, 0px);
+}
+
+/* Next Slide */
+#s1:checked ~ #slide2, #s2:checked ~ #slide3, #s3:checked ~ #slide4, #s4:checked ~ #slide5, #s5:checked ~ #slide1 {
+  box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+  transform: translate3d(15%, 0, -100px);
+}
+
+
+/* Next to Next Slide */
+#s1:checked ~ #slide3, #s2:checked ~ #slide4, #s3:checked ~ #slide5, #s4:checked ~ #slide1, #s5:checked ~ #slide2 {
+  box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+  transform: translate3d(30%, 0, -250px);
+}
+
+/* Previous to Previous Slide */
+#s1:checked ~ #slide4, #s2:checked ~ #slide5, #s3:checked ~ #slide1, #s4:checked ~ #slide2, #s5:checked ~ #slide3 {
+  box-shadow: 0 1px 4px rgba(0,0,0, 0.4);
+  transform: translate3d(-30%, 0, -250px);
+}
+
+/* Previous Slide */
+#s1:checked ~ #slide5, #s2:checked ~ #slide1, #s3:checked ~ #slide2, #s4:checked ~ #slide3, #s5:checked ~ #slide4 {
+  box-shadow: 0 6px 10px rgba(0,0,0, 0.3), 0 2px 2px rgba(0,0,0, 0.2);
+  transform: translate3d(-15%, 0, -100px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  position: absolute;
+  background: #151414;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+footer::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 150px;
+  height: 1px;
+  width: 100%;
+  background: #AFAFB6;
+}
+footer .content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+footer .content .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.content .top .logo-details{
+  color: #fff;
+  font-size: 30px;
+}
+.content .top .media-icons{
+  display: flex;
+}
+.content .top .media-icons a{
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.top .media-icons a:nth-child(1){
+  background: #4267B2;
+}
+.top .media-icons a:nth-child(1):hover{
+  color: #4267B2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(2){
+  background: #1DA1F2;
+}
+.top .media-icons a:nth-child(2):hover{
+  color: #1DA1F2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(3){
+  background: #E1306C;
+}
+.top .media-icons a:nth-child(3):hover{
+  color: #E1306C;
+  background: #fff;
+}
+.top .media-icons a:nth-child(4){
+  background: #0077B5;
+}
+.top .media-icons a:nth-child(4):hover{
+  color: #0077B5;
+  background: #fff;
+}
+.top .media-icons a:nth-child(2){
+  background: #FF0000;
+}
+.top .media-icons a:nth-child(2):hover{
+  color: #FF0000;
+  background: #fff;
+}
+
+.footer-text{
+  width: 30%;
+}
+
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+
+footer .content .link-boxes{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .content .link-boxes .box{
+  width: calc(100% / 5 - 10px);
+}
+.content .link-boxes .box .link_name{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+.link-boxes .box .link_name::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+.content .link-boxes .box li{
+  margin: 6px 0;
+  list-style: none;
+}
+.content .link-boxes .box li a{
+  color: #fff;
+  text-decoration: none;
+  
+  transition: all 0.4s ease
+}
+.content .link-boxes .box li a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.content .link-boxes .input-box{
+  margin-right: 55px;
+}
+.link-boxes .input-box input{
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #AFAFB6;
+  background: #140B5C;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}
+.link-boxes .input-box input::placeholder{
+  color: #AFAFB6;
+  font-size: 16px;
+}
+.link-boxes .input-box input[type="button"]{
+  background: #fff;
+  color: #140B5C;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.input-box input[type="button"]:hover{
+  opacity: 1;
+}
+footer .bottom-details{
+  width: 100%;
+  background: #202020;
+}
+footer .bottom-details .bottom_text{
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a{
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bottom-details .bottom_text a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text a{
+  margin-right: 10px;
+}
+@media (max-width: 900px) {
+  footer .content .link-boxes{
+    flex-wrap: wrap;
+  }
+  footer .content .link-boxes .input-box{
+    width: 40%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px){
+  footer{
+    position: relative;
+  }
+  .content .top .logo-details{
+    font-size: 26px;
+  }
+  .content .top .media-icons a{
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 3 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 60%;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a{
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px){
+  footer::before{
+    top: 145px;
+  }
+  footer .content .top{
+    flex-direction: column;
+  }
+  .content .top .media-icons{
+    margin-top: 16px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 2 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
