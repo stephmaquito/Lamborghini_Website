@@ -1314,6 +1314,14 @@ footer .bottom-details .bottom_text{
   }
 }
 @media (max-width: 520px){
+  .home .home-content .text-1, .home .home-content .text-2{
+    font-size: 40px;
+  }
+
+  .tab_container label{
+    font-size: 14px;
+  }
+
   
   footer .content .top{
     flex-direction: column;
@@ -1341,7 +1349,39 @@ footer .bottom-details .bottom_text{
 
 
 
+@media (max-width: 360px){
+  .flex-item-left .max-width, .flex-item-right .max-width{
+    padding-right: 10px;
+    padding-left: 50px;
+  }
 
+  .tab_container label{
+    font-size: 12px;
+  }
+
+
+
+  .last{
+    padding: 20px;    
+  }
+
+
+  
+  .content .top .logo-details{
+    font-size: 15px;
+  }
+
+  .footer-text p {
+    font-size: 10px;
+  }
+  .content .link-boxes .box .link_name{
+    font-size: 10px;
+  }
+
+  footer .content, footer .bottom_text, footer .bottom-details .bottom_text{
+    padding: 20px 15px;
+  }
+}
 
 
 

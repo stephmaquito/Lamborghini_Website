@@ -232,6 +232,8 @@ section:nth-child(1){
 
 }
 
+
+
 .Find .back-video video{
   object-fit: cover;
 }
@@ -280,7 +282,6 @@ video{
     padding-top: 0;
     font-size: 60px;
     font-weight: 600;
-    margin-left: -3px;
 }
 
 
@@ -440,6 +441,7 @@ section .home a:hover{
   text-align: center;
   color: black;
   font-size: 2vw;
+
 }
 
 .last .btn{
@@ -973,6 +975,70 @@ footer .bottom-details .bottom_text{
 
 
 
+
+
+
+
+
+
+@media (max-width: 480px){
+  .home .home-content .text-1, .home .home-content .text-3{
+    font-size: 10vw;
+  }
+
+  .home .home-content{
+    max-width: 80vw;
+  }
+
+
+  .aventador .max-width, .urus .max-width,
+  .huracan .max-width, .LS .max-width,
+  .Motorsport .max-width{
+      margin-top: 20vh;
+      margin-bottom: 0;
+  }
+
+  .LS .max-width,
+  .Motorsport .max-width{
+      margin-top: 8vh;
+      margin-bottom: 0;
+  }
+
+  .aventador .home-content  .text-1, .urus .home-content  .text-1,
+  .huracan .home-content  .text-1, .LS .home-content  .text-1,
+  .Motorsport .home-content  .text-1{
+    font-size: 25px;
+  }
+
+
+
+}
+
+
+@media (max-width: 360px){
+  .aventador .home-content  .text-1, .urus .home-content  .text-1,
+  .huracan .home-content  .text-1, .LS .home-content  .text-1,
+  .Motorsport .home-content  .text-1{
+    font-size: 20px;
+  }
+
+
+
+  .content .top .logo-details{
+    font-size: 15px;
+  }
+
+  .footer-text p {
+    font-size: 10px;
+  }
+  .content .link-boxes .box .link_name{
+    font-size: 10px;
+  }
+
+  footer .content, footer .bottom_text, footer .bottom-details .bottom_text{
+    padding: 20px 15px;
+  }
+}
 
 
 
