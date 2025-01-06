@@ -862,14 +862,16 @@ input[type="checkbox"]{
 .last{
   padding: 50px;
   background: white;
-  height: 100vh;
+  height: 65vh;
 }
+
 .last .text{
   text-align: center;
   color: black;
-  font-size: 2vw;
+  font-size: 1.5vw;
   margin: auto;
-  width: 80%;
+  width: auto;
+  height: auto;
 }
 
 .last .btn{
